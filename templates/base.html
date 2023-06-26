@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>kvm</title>
+
+</head>
+<body>
+<div id="container" style=width:100%;margin:auto;>
+	<div id="header" style=width:100%;height:100px;border:1px #F00 >
+		<div id="logo" style=float:left;width:20%;height:100px;border:1px #F00 >
+			<ul>
+				<span style="font-size: x-large;color:darkblue">哈工大（深圳）</span>
+			</ul>
+            <ul>
+				<span style="font-size: x-large;color:darkblue">校园云平台</span>
+			</ul>
+		</div>
+		<div id="status" style=float:left;width:80%;height:100px;border:1px #F00 >
+			<ul>
+                <span style="float:right;font-size: x-large;color: darkgreen">欢迎,{{username}}.<a href="/" target="_self">[注销]</a></span>
+			</ul>
+		</div>
+	</div>
+	<div id="main" style=width:100%;height:650px;border:1px #F00 >
+		<div id="menu" style=float:left;width:20%;height:750px;border:1px;background-color:lightgrey #F00 >
+			<ul>
+				<li style="list-style-type: none;font-size: x-large">虚拟机管理
+				<ul>
+					<li><a href="vm_list">虚拟机列表</a></li>
+					<li><a href="vm_create">创建虚拟机</a></li>
+				</ul>
+                </li>
+				<li style="list-style-type: none;font-size: x-large">磁盘管理
+				<ul>
+					<li><a href="disk_list">磁盘列表</a></li>
+					<li><a href="disk_create">创建磁盘</a></li>
+				</ul>
+                </li>
+				</ul>
+                </li>
+			</ul>
+		</div>
+        <div id="right" style=float:left;width:80%;height:750px;border:1px;background-color:snow #F00 >
+            {% block content %}
+
+            {% endblock %}
+		</div>
+	</div>
+	<div id="footer" style=text-align:right;width:100%;height:190px;border:1px;background-color:rebeccapurple  #F00 >
+		<ul>
+            <span style="font-size: xx-large"></span>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
